@@ -3,25 +3,17 @@ Application Gateway connection draining test code
 
 Below steps for websocket server/client implementation was refered from https://poiemaweb.com/nodejs-socketio
 
-1. install Socket.io
+## 1. Clone this repository
 
-$ mkdir socketio-chat && cd socketio-chat
-$ npm init --yes
-$ npm install --save --save-exact socket.io express
+    $ git clone https://github.com/hyundonk/connection-draining-test.git
+    $ cd connection-draining-test
 
-$ cat package.json
-{
-  "name": "socketio-chat",
-  "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "start": "node app"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "4.17.1",
-    "socket.io": "2.2.0"
-  }
-}
+## 2. check websocket port in app.js file. This example uses port 8100.
+
+## 3. install Socket.io
+    $ npm init --yes
+    $ npm install --save --save-exact socket.io express
+
+## 4. Run app.js
+    $ node app.js
+
